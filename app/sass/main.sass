@@ -1,0 +1,360 @@
+@import "fonts.sass"
+@import "../libs/css-hamburgers/dist/hamburgers.css"
+
+$accent: #ff5c2e
+
+header
+	background-image: url("../img/fons_header.png")
+	padding: 50px 0
+	background-size: cover
+	background-position: center
+
+
+.mnu
+	li
+		display: inline-block
+		margin-right: 80px
+		right: 0
+		color: #fff
+		a
+			color: #fff
+			text-decoration: none
+			transition: .5s ease
+			h4
+				font-family: "Serif-Regular"
+				font-size: 14px
+				text-transform: uppercase
+			p
+				font-family: "Serif-Italic"
+				width: 115px
+				font-size: 13px
+			&:hover
+				h4
+					transition: .5s ease
+					color: $accent
+
+.head_cont
+	text-align: center
+	color: #fff
+	margin-top: 167px
+	margin-bottom: 55px
+	h1
+		font-size: 52px
+		font-family: "Serif-Bold"
+		text-transform: uppercase
+	p
+		font-size: 36px
+		span
+			text-decoration: underline
+.head-btn
+	display: flex
+	justify-content: center
+	.btn
+		margin-right: 20px
+		padding-top: 10px
+
+.btn
+	background-color: $accent
+	border-radius: 5px
+	text-transform: uppercase
+	color: #fff
+	font-size: 13px
+	font-family: "Serif-Bold"
+	width: 160px
+	height: 45px
+	padding-top: 10px
+	&:hover
+		transition: .5s ease
+		span
+			color: #fff
+		background-color: rgba(#080708, .6)
+		color: #fff
+
+.head-scroll
+	text-align: center
+	margin-top: 140px
+	p
+		color: #fff
+	i
+		font-size: 22px
+		color: #fff
+
+.hamburger
+	position: fixed
+	right: 50px
+	top: 50px
+	.hamburger-inner
+		background-color: $accent
+		&::after
+			background-color: $accent
+		&::before
+			background-color: $accent
+
+#menu
+	z-index: 100
+	li:first-child
+		margin-top: 100px
+
+.hamburger
+	display: none
+	z-index: 1000
+
+.s-about
+	padding: 50px 0
+	background-color: #fff
+	.cont-about
+		margin-top: 100px
+		margin-bottom: 100px
+		h2
+			font-family: 'Serif-Bold'
+			font-size: 26px
+		p
+			font-size: 16px
+			font-family: 'Serif-Regular'
+			margin-bottom: 30px
+			span
+				color: $accent
+		.btn
+			float: right
+
+	.eric-img
+		position: absolute
+		margin-left: 80px
+		margin-top: -80px
+.img-glass
+	margin-bottom: 30px
+
+.s-events
+	margin-top: 50px
+	padding: 50px 0
+	.cont-events
+		margin-bottom: 100px
+		margin-top: 20px
+		h2
+			font-family: 'Serif-Bold'
+			font-size: 26px
+			text-align: center
+		p
+			font-size: 16px
+			font-family: 'Serif-Regular'
+		.btn	
+			float: right
+
+.s-reservation
+	background-color: #f7f7f7
+	padding: 50px
+.reservation
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	text-align: center
+	background-color: #fff
+	margin-top: 120px
+	box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.2)
+	padding: 70px
+	h2
+		font-family: "Serif-Bold"
+		margin-bottom: 40px
+		font-size: 22px
+
+.form-reservation
+	text-align: center
+	display: flex
+	justify-content: center
+	input
+		display: block
+		width: 310px
+		height: 50px
+		font-family: "font-awesome"
+		color: #333
+		background-color: #f7f7f7
+		border: 1px solid #e5e4e4
+		margin-bottom: 20px
+		padding: 10px 10px
+		content: "\f007"
+	.btn 
+		background-color: #222222
+		color: #fff
+		text-transform: uppercase
+		font-family: "Serif-Bold"
+.abs_awesome
+	right: 150px
+	color: #757575
+.inp_name
+	.abs_awesome
+		position: absolute
+		top: 289px
+
+.inp_date
+	.abs_awesome
+		position: absolute
+		top: 353px
+.inp_time
+	.abs_awesome
+		position: absolute
+		top: 430px
+
+.inp_commensals
+	.abs_awesome
+		position: absolute
+		top: 500px
+
+.events_reservation
+	background-color: #fff
+	margin-top: 120px
+	box-shadow: 0px 5px 7px 0px rgba(0, 0, 0, 0.2)
+	padding: 3px 70px
+	h2
+		font-family: "Serif-Bold"
+		margin-bottom: 40px
+		font-size: 22px
+		text-align: center
+
+.post_reservation
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	margin-top: 45px
+
+.img_post_reservation
+	margin-right: 20px
+
+.cont_post_reservation
+	.title_post
+		text-align: left
+		color: $accent
+		font-size: 16px
+		font-family: "Serif-Bold"
+		margin-bottom: 10px
+	.date_post
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		i 
+			margin-right: 5px
+		.time
+			margin-left: 10px
+	.cont_post
+		margin-top: 10px
+		font-family: "Serif-Regular"
+		p 
+			color: #3b3b3b
+		a 
+			color: $accent
+.s-contact
+	padding: 90px
+	padding-bottom: 100px
+
+.contact
+	text-align: center
+	h2
+		font-family: "Serif-Bold"
+	p 
+		font-family: "Serif-Regular"
+	.socials
+		display: -webkit-flex
+		display: -moz-flex
+		display: -ms-flex
+		display: -o-flex
+		display: flex
+		justify-content: center
+		margin-top: 50px
+		font-family: "font-awesome"
+		a 
+			text-decoration: none
+		.soc_tweet, .soc_facebook
+			color: #fff
+			padding: 5px
+			border: 1px solid #333
+			border-radius: 10px
+			margin-right: 10px
+			font-size: 13px
+			border: none
+		.soc_facebook
+			background-color: #3e59a5
+		.soc_tweet
+			background-color: #1b95e0
+.or
+	font-size: 22px
+	color: #9a9999
+	font-family: "Serif-Regular"
+	text-align: center
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	flex-direction: column
+	align-self: center
+	margin-top: 100px
+.line_bottom
+	position: absolute
+	width: 1px
+	height: 100px
+	background-color: #d7d6d6
+	right: 50%
+.line_top
+	position: absolute
+	width: 1px
+	height: 100px
+	background-color: #d7d6d6
+	right: 50%
+	top: 0
+
+.s-footer
+	background-color: #222
+	position: relative
+	margin-top: 200px
+	padding: 90px
+	span
+		color: #fff
+		font-family: "Serif-Bold"
+
+.nav_footer
+	text-transform: uppercase
+	a 
+		color: #fff
+		text-decoration: none
+		&:hover
+			color: $accent
+			transition: color .5s ease
+	ul 
+		text-align: left
+		padding: 0
+		margin-top: 20px
+	li 
+		list-style: none
+		font-family: "Serif-Regular"
+		margin-top: 10px
+.cont_footer
+	display: -webkit-flex
+	display: -moz-flex
+	display: -ms-flex
+	display: -o-flex
+	display: flex
+	justify-content: center
+.contact_footer
+	span
+		text-transform: uppercase
+		font-family: "Serif-Bold"
+	p 
+		font-family: "Serif-Regular"
+		color: #fff
+		font-size: 14px
+		margin: 20px 0
+		a
+			color: $accent
+.soc_footer
+	margin-top: 20px
+	a 
+		color: #fff
+		font-family: "font-awesome"
+	i 
+		margin-right: 30px
